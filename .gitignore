@@ -1,7 +1,7 @@
 # Folder Virtual Environment
 venv/
 
-# File Rahasia (Kunci API)
+# File Rahasia (Key API)
 .env
 
 # File cache Python

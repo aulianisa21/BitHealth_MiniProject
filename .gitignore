@@ -1,0 +1,11 @@
+# Folder Virtual Environment
+venv/
+
+# File Rahasia (Kunci API)
+.env
+
+# File cache Python
+__pycache__/
+
+# File sistem operasi Mac
+.DS_Store

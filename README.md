@@ -21,7 +21,7 @@ Ini adalah layanan API sederhana yang dibuat dengan FastAPI. Proyek ini mengguna
 
 1.  **Clone repositori:**
     ```bash
-    git clone [https://github.com/aulianisa21/BitHealth_MiniProject.git](https://github.com/aulianisa21/BitHealth_MiniProject.git)
+    git clone [https://github.com/aulianisa21/BitHealth_MiniProject.git]
     cd BitHealth_MiniProject
     ```
 

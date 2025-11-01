@@ -21,7 +21,7 @@ Ini adalah layanan API sederhana yang dibuat dengan FastAPI. Proyek ini mengguna
 
 1.  **Clone repositori:**
     ```bash
-    git clone [https://github.com/aulianisa21/BitHealth_MiniProject.git]
+    git clone [https://github.com/aulianisa21/BitHealth_MiniProject.git](https://github.com/aulianisa21/BitHealth_MiniProject.git)
     cd BitHealth_MiniProject
     ```
 
@@ -54,24 +54,28 @@ Ini adalah layanan API sederhana yang dibuat dengan FastAPI. Proyek ini mengguna
     ```
 2.  Server akan berjalan di `http://127.0.0.1:8000`.
 
-### 4. Cara Menguji API
+## 4. Cara Menguji API
 
-1.  Buka browser dan akses dokumentasi API di:
-    **http://127.0.0.1:8000/docs**
+1.  Buka browser dan akses dokumentasi API di: `http://127.0.0.1:8000/docs`
 
 2.  Temukan endpoint `POST /recommend` dan klik "Try it out".
 
-3.  Masukkan data pasien dalam format JSON:
-    ```json
-    {
-      "gender": "female",
-      "age": 62,
-      "symptoms": [
-        "pusing",
-        "mual"
-        "sulit berjalan"
-      ]
-    }
-    ```
+3.  Masukkan data pasien dalam format JSON.
 
-4.  Tekan "Execute". dan muncul respons spesialisasi departemennya berbentuk JSON.
+    **Contoh 1: Input Sesuai Task** (Input untuk `1.execute.png`)
+    ![Contoh Input 1](./images/1.execute.png)
+
+4.  Tekan "Execute". Anda akan mendapatkan respons yang sesuai.
+
+    **Hasil Contoh 1: "Neurologi"** (Hasil dari `2.result.png`)
+    ![Hasil Input 1](./images/2.result.png)
+
+5.  Saya coba memasukkan data lain, dengan mengganti umur dan gejala.
+
+    **Contoh 2: Input Berbeda** (Input dari `3.example.png`)
+    ![Contoh Input 2](./images/3.example.png)
+
+6.  AI akan memberikan respons yang dinamis berdasarkan input baru tersebut.
+
+    **Hasil Contoh 2: "Gastroenterologi"** (Hasil dari `4.example_result.png`)
+    ![Hasil Input 2](./images/4.example_result.png)

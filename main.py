@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from typing import List
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 # memuat variabel env (GOOGLE_API_KEY)
@@ -14,10 +14,12 @@ load_dotenv()
 #  KONFIGURASI (LANGCHAIN + LLM)
 # ==================================
 
-# Inisialisasi Model LLM (Gemini Pro)
-llm = ChatGoogleGenerativeAI(model="gemini-pro",
-                             google_api_key=os.getenv("GOOGLE_API_KEY"),
-                             temperature=0.1) # Temperature rendah agar jawaban fokus
+# Inisialisasi Model LLM 
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-pro", 
+    google_api_key=os.getenv("GOOGLE_API_KEY"),
+    temperature=0.1
+)
 
 # Prompt -> Instruksi untuk LLM
 prompt_template_text = """
@@ -71,7 +73,7 @@ class DepartmentOutput(BaseModel):
 @app.post("/recommend", response_model=DepartmentOutput)
 async def recommend_department(patient_data: PatientInput):
     """
-    Menerima data pasien (gender, usia, gejala) dan mengembalikan
+    Menerima data pasien (gender, usia, gejala) dan memberikan
     rekomendasi spesialisasi departemen.
     """
 

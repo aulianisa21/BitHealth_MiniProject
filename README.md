@@ -65,7 +65,7 @@ Ini adalah layanan API sederhana yang dibuat dengan FastAPI. Proyek ini mengguna
     **Contoh 1: Input Sesuai Task** (Input untuk `1.execute.png`)
     ![Contoh Input 1](./images/1.execute.png)
 
-4.  Tekan "Execute". Anda akan mendapatkan respons yang sesuai.
+4.  Tekan "Execute". Anda akan mendapatkan rekomendasi speasialisasi departemen.
 
     **Hasil Contoh 1: "Neurologi"** (Hasil dari `2.result.png`)
     ![Hasil Input 1](./images/2.result.png)
